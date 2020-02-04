@@ -16,7 +16,7 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "dev": "nodemon --exec \"npm start\"",
-    "start": "probot run ./lib/index.js",
+    "start": "probot run ./lib/src/index.js",
     "lint": "standard **/*.ts --fix",
     "test": "jest && standard **/*.ts",
     "test:watch": "jest --watch --notify --notifyMode=change --coverage"
@@ -26,7 +26,6 @@
   },
   "devDependencies": {
     "@types/jest": "^24.0.19",
-    "@types/nock": "^11.1.0",
     "@types/node": "^13.1.0",
     "@typescript-eslint/parser": "^2.4.0",
     "eslint-plugin-typescript": "^0.14.0",
