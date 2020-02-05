@@ -2,6 +2,20 @@
 
 > A GitHub App built with [Probot](https://github.com/probot/probot) that that automatically adds a "Het eiland" gif if your pull request has more deletions than additions.
 
+## Configuration
+If you want to customise this bot, create the `.github/wisserke.yml` config file
+
+Available options:
+
+| **Key**                  | **Description**                                              | **Default value**                                            |
+| ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| WISSERKE_GIF_URL         | The url to the gif, shown when the user has more additions than deletions. | "https://media.giphy.com/media/w8CGgakbif4iOZri06/giphy.gif" |
+| WISSERKE_BODY            | The comment body.                                            | "\![](https://media.giphy.com/media/w8CGgakbif4iOZri06/giphy.gif)" |
+| SHAME_GIF_URL            | The url to the gif, shown when the user has a large PR.      | "https://media.giphy.com/media/m6tmCnGCNvTby/giphy.gif"      |
+| SHAME_BODY               | The comment body.                                            | "Small PR's, am I right?\n\n\![](https://media.giphy.com/media/m6tmCnGCNvTby/giphy.gif)" |
+| PERCENTAGE_DIFF          | The percentage difference between the deletions and the additions. If the PR exceeds this threshold, the bot will post a `wisserke` comment. | 10                                                           |
+| SMALL_PR_FILES_THRESHOLD | The amount of files in a small PR. If the PR exceeds this threshold, the bot will post a `shame` comment. | 150                                                          |
+
 ## Setup
 
 ``` sh
