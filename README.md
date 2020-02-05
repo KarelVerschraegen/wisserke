@@ -4,7 +4,7 @@
 
 ## Setup
 
-```sh
+``` sh
 # Install dependencies
 npm install
 
@@ -13,6 +13,36 @@ npm run build
 
 # Run the bot
 npm start
+```
+
+## Deploy to heroku 
+
+1. Install heroku-cli (OS-specific)
+
+``` sh
+	yay -S heroku-cli
+```
+
+2. Clone the repository
+``` sh
+	git clone https://github.com/KarelVerschraegen/wisserke.git
+```
+
+3. Create a Heroku app
+``` sh
+	heroku create
+```
+
+4. Update the Webhook URL in the [app settings page](https://github.com/settings/apps/wisserke) with the URL of the newly created heroku app
+
+5. Configure the Heroku app with the environment variables
+``` sh
+	heroku config:set APP_ID=YOUR_ID WEBHOOK_SECRET=YOUR_SECRET PRIVATE_KEY=YOUR_PRIVATE_KEY
+```
+
+6. Push the code to heroku
+``` sh
+	git push heroku master
 ```
 
 ## Contributing
