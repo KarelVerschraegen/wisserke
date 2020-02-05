@@ -1,6 +1,6 @@
 # Wisserke
 
-> A GitHub App built with [Probot](https://github.com/probot/probot) that An app that automatically adds a \&quot;Het eiland\&quot; gif if your pull request has more deletions than additions\&quot;
+> A GitHub App built with [Probot](https://github.com/probot/probot) that that automatically adds a "Het eiland" gif if your pull request has more deletions than additions.
 
 ## Setup
 
