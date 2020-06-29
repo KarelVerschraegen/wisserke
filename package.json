@@ -25,7 +25,7 @@
     "probot": "^9.5.3"
   },
   "devDependencies": {
-    "@types/jest": "^25.1.1",
+    "@types/jest": "^26.0.3",
     "@types/node": "^14.0.1",
     "@typescript-eslint/parser": "^2.4.0",
     "eslint-plugin-typescript": "^0.14.0",
